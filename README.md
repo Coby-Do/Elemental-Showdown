@@ -34,6 +34,8 @@ cd elemental-showdown
 
 3. Open the <strong>'elements.html'</strong> file in your preferred web browser.
 
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/111834642/227365033-5f2945ba-3791-4fd2-b4de-06a67adccb02.png">
+
 ## How to Play
 
 1. Choose an element by clicking on the corresponding icon.
