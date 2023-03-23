@@ -19,7 +19,7 @@ Elemental Showdown is an interactive web-based game where players compete agains
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Coby-Do/elemental-showdown.git
+git clone https://github.com/Coby-Do/Elemental-Showdown.git
 ```
 
 2. Navigate to the project folder:
