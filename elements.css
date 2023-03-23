@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+}
+
+body {
+    background-color: #E1F4F3;
+}
+
+header {
+    background: #52575D;
+    padding: 20px;
+}
+
+header > h1, h2 {
+    display: inline;
+    color: white;
+}
+
+header > h2 {
+    text-align: right;
+    float: right;
+}
+
+header > h2:hover {
+    cursor: pointer;
+    color: #FF4B5C;
+    transition: all 0.2s; 
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid #52575D;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: #52575D;
+    font-size: 40px;
+    padding: 15px 20px;
+    position: relative
+}
+
+.badge {
+    background: #FF4B5C;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: #FF4B5C;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.choices {
+    margin-top: 50px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.choice {
+    border: 4px solid #52575D;
+    border-radius: 25%;
+    margin: 0 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+#water:hover {
+    background: aqua;
+}
+
+#earth:hover {
+    background: lightgreen;
+}
+
+#fire:hover {
+    background: orangered;
+}
+
+#air:hover {
+    background: grey;
+}
+
+#action-message {
+    text-align: center;
+    color: #FF4B5C;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.chart {
+    text-align: center;
+    padding: 30px;
+}
+
+.chart > img:hover {
+    cursor: pointer;
+}
+
+.reset {
+    text-align: left;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 50ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 200px auto;
+    padding: 20px;
+    background: #52575D;
+    border-radius: 25px;
+    width: 30%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.popup h3 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.popup .close:hover {
+    color: #FF4B5C;
+}
+.popup .description {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+#waterD, #earthD, #fireD, #airD {
+    padding-bottom: 5px;
+}
+
+#waterD {
+    color: aqua;
+}
+
+#earthD {
+    color: lightgreen;
+}
+
+#fireD {
+    color: orangered;
+}
+
+#airD {
+    color: lightgrey;
+}
+

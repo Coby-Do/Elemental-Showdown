@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Element Game</title>
+        <link rel="stylesheet" href="elements.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Elemental Showdown</h1>
+            <h2>Reset Game</h2>
+        </header>
+
+        <div class="score-board">
+            <div id="user-label" class="badge">Player</div>
+            <div id="computer-label" class="badge">CPU</div>
+            <span id="user-score">0</span> : <span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>Who Will Win? Select An Element!</p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="water">
+                <img src="icons8-water-50.png" alt="">
+            </div>
+            <div class="choice" id="earth">
+                <img src="icons8-earth-element-50.png" alt="">
+            </div>
+            <div class="choice" id="fire">
+                <img src="icons8-fire-50.png" alt="">
+            </div>
+            <div class="choice" id="air">
+                <img src="icons8-wind-50.png" alt="">
+            </div>
+        </div>
+
+        <p id="action-message">Balance Chart</p>
+        <script src="elements.js" charset="utf-8"></script>
+
+        <div class="chart">
+            <a href="#popup1">
+            <img src="Beats1.png" width="500" height="500">
+        </div>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h3>Balance Chart Description</h3>
+                <a class="close" href="#">x</a>
+                <div id="waterD" class="description">
+                    Water: Wins against Fire, loses against Earth, and ties against Air.
+                </div>
+                <div id="earthD" class="description">
+                    Earth: Wins against Water, loses against Air, and ties against Fire.
+                </div>
+                <div id="fireD" class="description">
+                    Fire: Wins against Air, loses against Water, and ties against Earth.
+                </div>
+                <div id="airD" class="description">
+                    Air: Wins against Earth, loses against Fire, and ties against Water.
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
